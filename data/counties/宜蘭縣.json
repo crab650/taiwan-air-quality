@@ -1,6 +1,6 @@
 {
   "county": "宜蘭縣",
-  "updated_at": "2026-07-04 01:09:11",
+  "updated_at": "2026-07-04 02:09:07",
   "stations": [
     {
       "site_id": "65",
@@ -26,33 +26,33 @@
       "wind_direc": "",
       "longitude": "121.74639",
       "latitude": "24.747917",
-      "publish_time": "2026/07/04 01:00:00"
+      "publish_time": "2026/07/04 02:00:00"
     },
     {
       "site_id": "66",
       "site_name": "冬山",
       "county": "宜蘭縣",
-      "aqi": 33,
+      "aqi": 36,
       "status": "良好",
       "pollutant": "",
-      "pm2_5": "9",
-      "pm2_5_avg": "7.9",
-      "pm10": "27",
+      "pm2_5": "10",
+      "pm2_5_avg": "8.9",
+      "pm10": "20",
       "pm10_avg": "20",
-      "o3": "13",
-      "o3_8hr": "18",
-      "co": "0.17",
+      "o3": "10",
+      "o3_8hr": "16",
+      "co": "0.21",
       "co_8hr": "0.1",
-      "so2": "0.6",
+      "so2": "0.1",
       "so2_avg": "1",
       "no2": "3",
       "no": "0.5",
-      "nox": "4.5",
-      "wind_speed": "1",
-      "wind_direc": "199",
+      "nox": "4.2",
+      "wind_speed": "0.8",
+      "wind_direc": "292",
       "longitude": "121.79293",
       "latitude": "24.632202",
-      "publish_time": "2026/07/04 01:00:00"
+      "publish_time": "2026/07/04 02:00:00"
     }
   ]
 }
