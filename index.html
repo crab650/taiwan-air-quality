@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣即時空氣品質監測儀表板 | Taiwan Air Quality Tracker 🍃</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor bg-circle-1"></div>
+    <div class="background-decor bg-circle-2"></div>
+    <div class="background-decor bg-circle-3"></div>
+
+    <div class="dashboard-container">
+        <!-- Sidebar / Filter Panel -->
+        <aside class="sidebar glass">
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-wind fa-bounce"></i>
+                </div>
+                <div>
+                    <h1>台灣空品監測</h1>
+                    <p>Air Quality Tracker</p>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label><i class="fa-solid fa-magnifying-glass"></i> 搜尋測站或縣市</label>
+                <input type="text" id="search-input" placeholder="例如：萬華、基隆、宜蘭...">
+            </div>
+
+            <div class="filter-group">
+                <label><i class="fa-solid fa-square-poll-vertical"></i> 空氣品質狀態</label>
+                <div class="filter-buttons" id="status-filter">
+                    <button class="filter-btn active" data-status="all">全部</button>
+                    <button class="filter-btn" data-status="good">🟢 良好</button>
+                    <button class="filter-btn" data-status="moderate">🟡 普通</button>
+                    <button class="filter-btn" data-status="unhealthy">🟠🔴 不健康</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label><i class="fa-solid fa-map-location-dot"></i> 縣市地區篩選</label>
+                <select id="county-select" class="county-dropdown glass-inner">
+                    <option value="all">所有縣市 (全部)</option>
+                    <!-- Options populated dynamically -->
+                </select>
+            </div>
+
+            <div class="stats-card glass-inner">
+                <h3><i class="fa-solid fa-chart-simple"></i> 全台空品概況</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">觀測站總數</span>
+                        <span class="stat-value" id="stat-total">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">全國平均 AQI</span>
+                        <span class="stat-value" id="stat-avg-aqi">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">🟢 最優測站</span>
+                        <span class="stat-value text-green" id="stat-best-site" style="font-size: 0.85rem; font-weight: 600;">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">🔴 最差測站</span>
+                        <span class="stat-value text-red" id="stat-worst-site" style="font-size: 0.85rem; font-weight: 600;">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <p><i class="fa-solid fa-circle-info"></i> 資料來源：環境部國家環境研究院</p>
+                <p>最後更新：<span id="update-time">-</span></p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Left List Column -->
+            <section class="list-section glass">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-list"></i> 觀測測站清單</h2>
+                    <span class="badge" id="list-count">顯示 0 站</span>
+                </div>
+                <div class="list-container" id="station-list">
+                    <!-- Loading State -->
+                    <div class="loading-state">
+                        <i class="fa-solid fa-circle-notch fa-spin"></i>
+                        <p>載入空氣品質觀測資料中...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Detail Column -->
+            <section class="detail-section glass" id="detail-section">
+                <!-- Select Prompt -->
+                <div class="select-prompt" id="select-prompt">
+                    <i class="fa-solid fa-location-crosshairs fa-beat"></i>
+                    <h2>請選擇一個觀測站</h2>
+                    <p>從左側列表中點選，即可查看該測站的詳細空品指標、污染物濃度與即時數據分析。</p>
+                </div>
+
+                <!-- Actual Detail Content (Hidden by default) -->
+                <div class="detail-content hidden" id="detail-content">
+                    <div class="detail-header">
+                        <div class="title-row">
+                            <span class="badge-type" id="det-county">台北市</span>
+                            <span class="id-tag" id="det-site-id">測站編號：14</span>
+                        </div>
+                        <h2 id="det-site-name">古亭 觀測站</h2>
+                        <div class="time-row">
+                            <i class="fa-regular fa-clock"></i> <span id="det-time">2026-07-03 22:00:00 (台北時間)</span>
+                        </div>
+                    </div>
+
+                    <div class="aqi-display-panel glass-inner">
+                        <div class="aqi-score-container">
+                            <div class="aqi-circle" id="det-aqi-circle">
+                                <span class="aqi-val" id="det-aqi-value">30</span>
+                                <span class="aqi-lbl">AQI</span>
+                            </div>
+                        </div>
+                        <div class="aqi-status-info">
+                            <div class="status-badge" id="det-status-badge">良好</div>
+                            <p class="pollutant-desc" id="det-pollutant-desc">指標污染物：無</p>
+                            <div class="health-tips" id="det-health-tips">
+                                <strong>健康防護指引：</strong>
+                                <span id="det-health-text">空氣品質為良好，非常適合戶外活動。</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-detail-grid">
+                        <!-- Left Details & Pollutants Grid -->
+                        <div class="grid-left" style="grid-column: span 2;">
+                            <div class="info-block glass-inner">
+                                <h3><i class="fa-solid fa-vials"></i> 即時監測項目與濃度</h3>
+                                <div class="pollutant-grid">
+                                    <!-- PM2.5 -->
+                                    <div class="pollutant-card">
+                                        <span class="p-name">細懸浮微粒 (PM<sub>2.5</sub>)</span>
+                                        <div class="p-val-row">
+                                            <span class="p-val" id="det-pm25">-</span>
+                                            <span class="p-unit">μg/m³</span>
+                                        </div>
+                                        <span class="p-avg">24hr 平均值：<span id="det-pm25-avg">-</span> μg/m³</span>
+                                    </div>
+                                    <!-- PM10 -->
+                                    <div class="pollutant-card">
+                                        <span class="p-name">懸浮微粒 (PM<sub>10</sub>)</span>
+                                        <div class="p-val-row">
+                                            <span class="p-val" id="det-pm10">-</span>
+                                            <span class="p-unit">μg/m³</span>
+                                        </div>
+                                        <span class="p-avg">24hr 平均值：<span id="det-pm10-avg">-</span> μg/m³</span>
+                                    </div>
+                                    <!-- O3 -->
+                                    <div class="pollutant-card">
+                                        <span class="p-name">臭氧 (O<sub>3</sub>)</span>
+                                        <div class="p-val-row">
+                                            <span class="p-val" id="det-o3">-</span>
+                                            <span class="p-unit">ppb</span>
+                                        </div>
+                                        <span class="p-avg">8hr 平均值：<span id="det-o3-8hr">-</span> ppb</span>
+                                    </div>
+                                    <!-- CO -->
+                                    <div class="pollutant-card">
+                                        <span class="p-name">一氧化碳 (CO)</span>
+                                        <div class="p-val-row">
+                                            <span class="p-val" id="det-co">-</span>
+                                            <span class="p-unit">ppm</span>
+                                        </div>
+                                        <span class="p-avg">8hr 平均值：<span id="det-co-8hr">-</span> ppm</span>
+                                    </div>
+                                    <!-- SO2 -->
+                                    <div class="pollutant-card">
+                                        <span class="p-name">二氧化硫 (SO<sub>2</sub>)</span>
+                                        <div class="p-val-row">
+                                            <span class="p-val" id="det-so2">-</span>
+                                            <span class="p-unit">ppb</span>
+                                        </div>
+                                        <span class="p-avg">24hr 平均值：<span id="det-so2-avg">-</span> ppb</span>
+                                    </div>
+                                    <!-- NO2 -->
+                                    <div class="pollutant-card">
+                                        <span class="p-name">二氧化氮 (NO<sub>2</sub>)</span>
+                                        <div class="p-val-row">
+                                            <span class="p-val" id="det-no2">-</span>
+                                            <span class="p-unit">ppb</span>
+                                        </div>
+                                        <span class="p-avg">一氧化氮 (NO)：<span id="det-no">-</span> ppb</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Meteorological Block -->
+                        <div class="grid-right">
+                            <div class="info-block glass-inner weather-block">
+                                <h3><i class="fa-solid fa-cloud-sun"></i> 即時氣象觀測</h3>
+                                <div class="weather-grid">
+                                    <div class="weather-card">
+                                        <i class="fa-solid fa-wind font-blue"></i>
+                                        <div class="weather-text">
+                                            <span class="lbl">風速</span>
+                                            <span class="val" id="det-wind-speed">- <small>m/s</small></span>
+                                        </div>
+                                    </div>
+                                    <div class="weather-card">
+                                        <i class="fa-solid fa-compass font-orange" id="wind-compass-icon"></i>
+                                        <div class="weather-text">
+                                            <span class="lbl">風向</span>
+                                            <span class="val" id="det-wind-direc">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coords-box">
+                                    <span class="lbl"><i class="fa-solid fa-location-dot"></i> 經緯度座標</span>
+                                    <span class="val" id="det-coords">25.0206, 121.5296</span>
+                                    <a id="det-map-link" href="#" target="_blank" class="btn-map"><i class="fa-solid fa-arrow-up-right-from-square"></i> 在地圖上查看</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
