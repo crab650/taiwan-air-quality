@@ -30,9 +30,9 @@ CURRENT_REMOTE=$(git remote get-url origin 2>/dev/null)
 if [ -z "$CURRENT_REMOTE" ]; then
     echo "[*] Adding remote origin: $TARGET_REMOTE"
     git remote add origin "$TARGET_REMOTE"
-elif [ "$CURRENT_REMOTE" != "$TARGET_REMOTE" ]; then
-    echo "[*] Updating remote origin to: $TARGET_REMOTE"
-    git remote set-url origin "$TARGET_REMOTE"
+else
+    # Keep the existing remote so users can use SSH or HTTPS freely
+    echo "[*] Using existing remote origin: $CURRENT_REMOTE"
 fi
 
 # 3. Check if data/ folder has changed or README.md has changed
