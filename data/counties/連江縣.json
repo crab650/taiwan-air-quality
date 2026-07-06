@@ -1,32 +1,32 @@
 {
   "county": "連江縣",
-  "updated_at": "2026-07-06 20:09:11",
+  "updated_at": "2026-07-06 21:09:09",
   "stations": [
     {
       "site_id": "75",
       "site_name": "馬祖",
       "county": "連江縣",
-      "aqi": 28,
+      "aqi": 26,
       "status": "良好",
       "pollutant": "",
       "pm2_5": "4",
-      "pm2_5_avg": "6.5",
-      "pm10": "17",
-      "pm10_avg": "17",
-      "o3": "25",
-      "o3_8hr": "29",
+      "pm2_5_avg": "6.3",
+      "pm10": "15",
+      "pm10_avg": "15",
+      "o3": "22",
+      "o3_8hr": "28",
       "co": "",
       "co_8hr": "",
       "so2": "0.8",
       "so2_avg": "0",
-      "no2": "2",
-      "no": "0.6",
-      "nox": "2.7",
-      "wind_speed": "4.3",
-      "wind_direc": "186",
+      "no2": "1",
+      "no": "0.5",
+      "nox": "2.3",
+      "wind_speed": "4.8",
+      "wind_direc": "212",
       "longitude": "119.95272",
       "latitude": "26.153736",
-      "publish_time": "2026/07/06 20:00:00"
+      "publish_time": "2026/07/06 21:00:00"
     }
   ]
 }
