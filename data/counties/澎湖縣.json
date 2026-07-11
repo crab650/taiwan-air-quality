@@ -1,32 +1,32 @@
 {
   "county": "澎湖縣",
-  "updated_at": "2026-07-12 02:09:10",
+  "updated_at": "2026-07-12 03:09:08",
   "stations": [
     {
       "site_id": "78",
       "site_name": "馬公",
       "county": "澎湖縣",
-      "aqi": 64,
+      "aqi": 53,
       "status": "普通",
-      "pollutant": "臭氧八小時",
-      "pm2_5": "10",
-      "pm2_5_avg": "14.4",
-      "pm10": "24",
+      "pollutant": "細懸浮微粒",
+      "pm2_5": "8",
+      "pm2_5_avg": "13.3",
+      "pm10": "31",
       "pm10_avg": "30",
       "o3": "32",
-      "o3_8hr": "59",
+      "o3_8hr": "52",
       "co": "0.09",
       "co_8hr": "0.1",
       "so2": "0.3",
       "so2_avg": "0",
       "no2": "1",
-      "no": "0.1",
+      "no": "0.2",
       "nox": "1.4",
-      "wind_speed": "4",
-      "wind_direc": "202",
+      "wind_speed": "3.4",
+      "wind_direc": "185",
       "longitude": "119.566154",
       "latitude": "23.56903",
-      "publish_time": "2026/07/12 02:00:00"
+      "publish_time": "2026/07/12 03:00:00"
     }
   ]
 }
