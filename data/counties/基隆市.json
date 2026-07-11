@@ -1,32 +1,32 @@
 {
   "county": "基隆市",
-  "updated_at": "2026-07-12 04:09:09",
+  "updated_at": "2026-07-12 05:09:09",
   "stations": [
     {
       "site_id": "1",
       "site_name": "基隆",
       "county": "基隆市",
-      "aqi": 17,
+      "aqi": 14,
       "status": "良好",
       "pollutant": "",
       "pm2_5": "0",
       "pm2_5_avg": "1.4",
-      "pm10": "9",
-      "pm10_avg": "5",
-      "o3": "8",
-      "o3_8hr": "18",
-      "co": "0.14",
+      "pm10": "14",
+      "pm10_avg": "7",
+      "o3": "5",
+      "o3_8hr": "15",
+      "co": "0.17",
       "co_8hr": "0.1",
       "so2": "0.7",
       "so2_avg": "1",
-      "no2": "3",
-      "no": "1",
-      "nox": "4",
-      "wind_speed": "0.9",
-      "wind_direc": "293",
+      "no2": "4",
+      "no": "1.2",
+      "nox": "5.5",
+      "wind_speed": "0.3",
+      "wind_direc": "301",
       "longitude": "121.760056",
       "latitude": "25.129168",
-      "publish_time": "2026/07/12 04:00:00"
+      "publish_time": "2026/07/12 05:00:00"
     }
   ]
 }
