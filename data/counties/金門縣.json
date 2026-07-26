@@ -1,6 +1,6 @@
 {
   "county": "金門縣",
-  "updated_at": "2026-07-26 20:09:11",
+  "updated_at": "2026-07-26 21:09:12",
   "stations": [
     {
       "site_id": "77",
@@ -22,11 +22,11 @@
       "no2": "",
       "no": "",
       "nox": "",
-      "wind_speed": "1.7",
-      "wind_direc": "133",
+      "wind_speed": "1.1",
+      "wind_direc": "128",
       "longitude": "118.312256",
       "latitude": "24.432133",
-      "publish_time": "2026/07/26 20:00:00"
+      "publish_time": "2026/07/26 21:00:00"
     }
   ]
 }
