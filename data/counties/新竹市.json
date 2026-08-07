@@ -1,32 +1,32 @@
 {
   "county": "新竹市",
-  "updated_at": "2026-08-07 17:09:09",
+  "updated_at": "2026-08-07 18:09:13",
   "stations": [
     {
       "site_id": "24",
       "site_name": "新竹",
       "county": "新竹市",
-      "aqi": 58,
+      "aqi": 55,
       "status": "普通",
       "pollutant": "細懸浮微粒",
       "pm2_5": "10",
-      "pm2_5_avg": "15",
-      "pm10": "27",
+      "pm2_5_avg": "13.9",
+      "pm10": "24",
       "pm10_avg": "26",
-      "o3": "51",
-      "o3_8hr": "49",
+      "o3": "46",
+      "o3_8hr": "50",
       "co": "0.2",
       "co_8hr": "0.1",
       "so2": "0.9",
       "so2_avg": "1",
       "no2": "7",
-      "no": "1.2",
-      "nox": "8.4",
-      "wind_speed": "2.4",
-      "wind_direc": "45",
+      "no": "1",
+      "nox": "8.8",
+      "wind_speed": "2.1",
+      "wind_direc": "50",
       "longitude": "120.97237",
       "latitude": "24.805635",
-      "publish_time": "2026/08/07 17:00:00"
+      "publish_time": "2026/08/07 18:00:00"
     }
   ]
 }
