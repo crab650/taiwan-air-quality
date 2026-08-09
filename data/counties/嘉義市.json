@@ -1,32 +1,32 @@
 {
   "county": "嘉義市",
-  "updated_at": "2026-08-09 22:09:10",
+  "updated_at": "2026-08-09 23:09:11",
   "stations": [
     {
       "site_id": "42",
       "site_name": "嘉義",
       "county": "嘉義市",
-      "aqi": 57,
+      "aqi": 56,
       "status": "普通",
       "pollutant": "細懸浮微粒",
       "pm2_5": "13",
-      "pm2_5_avg": "14.8",
+      "pm2_5_avg": "14.5",
       "pm10": "",
       "pm10_avg": "",
-      "o3": "37",
-      "o3_8hr": "44",
-      "co": "0.2",
+      "o3": "35",
+      "o3_8hr": "42",
+      "co": "0.19",
       "co_8hr": "0.2",
-      "so2": "1.2",
+      "so2": "1",
       "so2_avg": "1",
       "no2": "2",
       "no": "0",
-      "nox": "2.6",
-      "wind_speed": "1.9",
-      "wind_direc": "204",
+      "nox": "1.7",
+      "wind_speed": "3.2",
+      "wind_direc": "218",
       "longitude": "120.44125",
       "latitude": "23.464779",
-      "publish_time": "2026/08/09 22:00:00"
+      "publish_time": "2026/08/09 23:00:00"
     }
   ]
 }
