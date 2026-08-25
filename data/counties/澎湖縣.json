@@ -1,6 +1,6 @@
 {
   "county": "澎湖縣",
-  "updated_at": "2026-08-25 11:09:10",
+  "updated_at": "2026-08-25 12:09:11",
   "stations": [
     {
       "site_id": "78",
@@ -26,7 +26,7 @@
       "wind_direc": "",
       "longitude": "119.566154",
       "latitude": "23.56903",
-      "publish_time": "2026/08/25 11:00:00"
+      "publish_time": "2026/08/25 12:00:00"
     }
   ]
 }
