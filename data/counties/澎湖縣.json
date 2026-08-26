@@ -1,6 +1,6 @@
 {
   "county": "澎湖縣",
-  "updated_at": "2026-08-26 15:09:10",
+  "updated_at": "2026-08-26 16:09:10",
   "stations": [
     {
       "site_id": "78",
@@ -11,22 +11,22 @@
       "pollutant": "",
       "pm2_5": "0",
       "pm2_5_avg": "",
-      "pm10": "1",
+      "pm10": "7",
       "pm10_avg": "",
-      "o3": "31",
+      "o3": "29",
       "o3_8hr": "",
-      "co": "0.18",
+      "co": "0.2",
       "co_8hr": "",
       "so2": "",
       "so2_avg": "",
       "no2": "",
       "no": "",
       "nox": "",
-      "wind_speed": "2.5",
-      "wind_direc": "173",
+      "wind_speed": "2",
+      "wind_direc": "180",
       "longitude": "119.566154",
       "latitude": "23.56903",
-      "publish_time": "2026/08/26 15:00:00"
+      "publish_time": "2026/08/26 16:00:00"
     }
   ]
 }
