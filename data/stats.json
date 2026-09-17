@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-17 15:09:10",
+  "updated_at": "2026-09-17 16:09:10",
   "summary": {
     "total_stations": 84,
-    "good_count": 33,
-    "moderate_count": 50,
+    "good_count": 32,
+    "moderate_count": 51,
     "unhealthy_sensitive_count": 1,
     "unhealthy_all_count": 0,
     "very_unhealthy_count": 0,
@@ -51,6 +51,13 @@
       "station_count": 4,
       "max_aqi": 71,
       "min_aqi": 54
+    },
+    {
+      "county": "嘉義縣",
+      "average_aqi": 64.0,
+      "station_count": 2,
+      "max_aqi": 68,
+      "min_aqi": 60
     },
     {
       "county": "嘉義市",
@@ -156,13 +163,6 @@
       "station_count": 2,
       "max_aqi": 45,
       "min_aqi": 24
-    },
-    {
-      "county": "嘉義縣",
-      "average_aqi": 34.0,
-      "station_count": 2,
-      "max_aqi": 68,
-      "min_aqi": 0
     }
   ]
 }
