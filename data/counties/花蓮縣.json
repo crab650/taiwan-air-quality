@@ -1,32 +1,32 @@
 {
   "county": "花蓮縣",
-  "updated_at": "2026-10-16 18:09:10",
+  "updated_at": "2026-10-16 19:09:06",
   "stations": [
     {
       "site_id": "63",
       "site_name": "花蓮",
       "county": "花蓮縣",
-      "aqi": 40,
+      "aqi": 37,
       "status": "良好",
       "pollutant": "",
       "pm2_5": "5",
       "pm2_5_avg": "5.5",
       "pm10": "15",
       "pm10_avg": "17",
-      "o3": "32",
-      "o3_8hr": "43",
+      "o3": "29",
+      "o3_8hr": "40",
       "co": "0.28",
       "co_8hr": "0.2",
-      "so2": "0.7",
+      "so2": "1",
       "so2_avg": "1",
-      "no2": "7",
-      "no": "0.4",
-      "nox": "8",
-      "wind_speed": "2",
-      "wind_direc": "304",
+      "no2": "6",
+      "no": "0.6",
+      "nox": "6.8",
+      "wind_speed": "1.4",
+      "wind_direc": "237",
       "longitude": "121.59977",
       "latitude": "23.971306",
-      "publish_time": "2026/10/16 18:00:00"
+      "publish_time": "2026/10/16 19:00:00"
     }
   ]
 }
