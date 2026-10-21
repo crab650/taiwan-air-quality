@@ -1,32 +1,32 @@
 {
   "county": "金門縣",
-  "updated_at": "2026-10-21 11:09:07",
+  "updated_at": "2026-10-21 12:09:07",
   "stations": [
     {
       "site_id": "77",
       "site_name": "金門",
       "county": "金門縣",
-      "aqi": 65,
+      "aqi": 67,
       "status": "普通",
       "pollutant": "細懸浮微粒",
-      "pm2_5": "12",
-      "pm2_5_avg": "17.7",
-      "pm10": "",
-      "pm10_avg": "39",
+      "pm2_5": "",
+      "pm2_5_avg": "18.2",
+      "pm10": "29",
+      "pm10_avg": "38",
       "o3": "",
-      "o3_8hr": "26",
-      "co": "",
+      "o3_8hr": "25",
+      "co": "0.2",
       "co_8hr": "0.2",
-      "so2": "",
+      "so2": "0.9",
       "so2_avg": "1",
-      "no2": "",
-      "no": "",
-      "nox": "",
-      "wind_speed": "2.2",
-      "wind_direc": "45",
+      "no2": "5",
+      "no": "0.6",
+      "nox": "5.8",
+      "wind_speed": "",
+      "wind_direc": "",
       "longitude": "118.312256",
       "latitude": "24.432133",
-      "publish_time": "2026/10/21 11:00:00"
+      "publish_time": "2026/10/21 12:00:00"
     }
   ]
 }
