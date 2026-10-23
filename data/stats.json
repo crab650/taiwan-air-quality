@@ -1,112 +1,112 @@
 {
-  "updated_at": "2026-10-23 07:09:11",
+  "updated_at": "2026-10-23 08:09:06",
   "summary": {
     "total_stations": 84,
-    "good_count": 45,
-    "moderate_count": 33,
-    "unhealthy_sensitive_count": 5,
+    "good_count": 47,
+    "moderate_count": 30,
+    "unhealthy_sensitive_count": 6,
     "unhealthy_all_count": 1,
     "very_unhealthy_count": 0,
     "hazardous_count": 0
   },
   "county_averages": [
     {
-      "county": "臺東縣",
-      "average_aqi": 115.0,
+      "county": "嘉義縣",
+      "average_aqi": 109.0,
       "station_count": 2,
-      "max_aqi": 180,
-      "min_aqi": 50
+      "max_aqi": 115,
+      "min_aqi": 103
     },
     {
-      "county": "嘉義縣",
-      "average_aqi": 112.5,
+      "county": "臺東縣",
+      "average_aqi": 100.5,
       "station_count": 2,
-      "max_aqi": 117,
-      "min_aqi": 108
+      "max_aqi": 158,
+      "min_aqi": 43
     },
     {
       "county": "雲林縣",
-      "average_aqi": 95.8,
+      "average_aqi": 92.8,
       "station_count": 4,
-      "max_aqi": 142,
-      "min_aqi": 45
-    },
-    {
-      "county": "屏東縣",
-      "average_aqi": 82.2,
-      "station_count": 5,
-      "max_aqi": 104,
-      "min_aqi": 68
-    },
-    {
-      "county": "臺南市",
-      "average_aqi": 81.4,
-      "station_count": 5,
-      "max_aqi": 90,
-      "min_aqi": 67
+      "max_aqi": 138,
+      "min_aqi": 38
     },
     {
       "county": "澎湖縣",
-      "average_aqi": 78.0,
+      "average_aqi": 80.0,
       "station_count": 1,
-      "max_aqi": 78,
-      "min_aqi": 78
-    },
-    {
-      "county": "高雄市",
-      "average_aqi": 75.2,
-      "station_count": 12,
-      "max_aqi": 81,
-      "min_aqi": 69
-    },
-    {
-      "county": "彰化縣",
-      "average_aqi": 61.2,
-      "station_count": 5,
       "max_aqi": 80,
-      "min_aqi": 39
+      "min_aqi": 80
     },
     {
-      "county": "基隆市",
-      "average_aqi": 61.0,
-      "station_count": 1,
-      "max_aqi": 61,
+      "county": "臺南市",
+      "average_aqi": 77.6,
+      "station_count": 5,
+      "max_aqi": 88,
       "min_aqi": 61
     },
     {
-      "county": "嘉義市",
-      "average_aqi": 59.0,
-      "station_count": 1,
-      "max_aqi": 59,
-      "min_aqi": 59
+      "county": "屏東縣",
+      "average_aqi": 77.4,
+      "station_count": 5,
+      "max_aqi": 104,
+      "min_aqi": 60
     },
     {
-      "county": "連江縣",
-      "average_aqi": 51.0,
+      "county": "高雄市",
+      "average_aqi": 68.8,
+      "station_count": 12,
+      "max_aqi": 74,
+      "min_aqi": 62
+    },
+    {
+      "county": "基隆市",
+      "average_aqi": 60.0,
       "station_count": 1,
-      "max_aqi": 51,
-      "min_aqi": 51
+      "max_aqi": 60,
+      "min_aqi": 60
+    },
+    {
+      "county": "彰化縣",
+      "average_aqi": 58.6,
+      "station_count": 5,
+      "max_aqi": 74,
+      "min_aqi": 39
     },
     {
       "county": "桃園市",
-      "average_aqi": 48.8,
+      "average_aqi": 55.0,
       "station_count": 6,
-      "max_aqi": 84,
-      "min_aqi": 33
+      "max_aqi": 113,
+      "min_aqi": 32
+    },
+    {
+      "county": "嘉義市",
+      "average_aqi": 52.0,
+      "station_count": 1,
+      "max_aqi": 52,
+      "min_aqi": 52
+    },
+    {
+      "county": "連江縣",
+      "average_aqi": 50.0,
+      "station_count": 1,
+      "max_aqi": 50,
+      "min_aqi": 50
     },
     {
       "county": "金門縣",
-      "average_aqi": 48.0,
-      "station_count": 1,
-      "max_aqi": 48,
-      "min_aqi": 48
-    },
-    {
-      "county": "花蓮縣",
       "average_aqi": 47.0,
       "station_count": 1,
       "max_aqi": 47,
       "min_aqi": 47
+    },
+    {
+      "county": "花蓮縣",
+      "average_aqi": 45.0,
+      "station_count": 1,
+      "max_aqi": 45,
+      "min_aqi": 45
     },
     {
       "county": "新竹市",
@@ -117,14 +117,14 @@
     },
     {
       "county": "新北市",
-      "average_aqi": 38.7,
+      "average_aqi": 37.6,
       "station_count": 12,
-      "max_aqi": 77,
+      "max_aqi": 76,
       "min_aqi": 28
     },
     {
       "county": "臺中市",
-      "average_aqi": 36.7,
+      "average_aqi": 37.0,
       "station_count": 6,
       "max_aqi": 40,
       "min_aqi": 33
@@ -137,13 +137,6 @@
       "min_aqi": 34
     },
     {
-      "county": "臺北市",
-      "average_aqi": 36.3,
-      "station_count": 7,
-      "max_aqi": 39,
-      "min_aqi": 34
-    },
-    {
       "county": "苗栗縣",
       "average_aqi": 35.0,
       "station_count": 3,
@@ -151,18 +144,25 @@
       "min_aqi": 35
     },
     {
-      "county": "南投縣",
-      "average_aqi": 31.8,
-      "station_count": 4,
-      "max_aqi": 35,
-      "min_aqi": 24
+      "county": "臺北市",
+      "average_aqi": 34.7,
+      "station_count": 7,
+      "max_aqi": 37,
+      "min_aqi": 33
     },
     {
       "county": "宜蘭縣",
-      "average_aqi": 29.5,
+      "average_aqi": 33.5,
       "station_count": 2,
-      "max_aqi": 32,
-      "min_aqi": 27
+      "max_aqi": 38,
+      "min_aqi": 29
+    },
+    {
+      "county": "南投縣",
+      "average_aqi": 30.2,
+      "station_count": 4,
+      "max_aqi": 33,
+      "min_aqi": 25
     }
   ]
 }
