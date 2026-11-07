@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-08 02:09:10",
+  "updated_at": "2026-11-08 03:09:09",
   "summary": {
     "total_stations": 84,
     "good_count": 26,
-    "moderate_count": 56,
-    "unhealthy_sensitive_count": 2,
+    "moderate_count": 57,
+    "unhealthy_sensitive_count": 1,
     "unhealthy_all_count": 0,
     "very_unhealthy_count": 0,
     "hazardous_count": 0
@@ -12,17 +12,17 @@
   "county_averages": [
     {
       "county": "彰化縣",
-      "average_aqi": 85.8,
+      "average_aqi": 82.8,
       "station_count": 5,
-      "max_aqi": 113,
-      "min_aqi": 63
+      "max_aqi": 112,
+      "min_aqi": 62
     },
     {
       "county": "南投縣",
-      "average_aqi": 80.8,
+      "average_aqi": 78.0,
       "station_count": 4,
-      "max_aqi": 98,
-      "min_aqi": 71
+      "max_aqi": 96,
+      "min_aqi": 68
     },
     {
       "county": "連江縣",
@@ -33,24 +33,17 @@
     },
     {
       "county": "雲林縣",
-      "average_aqi": 65.0,
+      "average_aqi": 64.8,
       "station_count": 4,
-      "max_aqi": 67,
-      "min_aqi": 62
+      "max_aqi": 66,
+      "min_aqi": 63
     },
     {
       "county": "澎湖縣",
-      "average_aqi": 64.0,
+      "average_aqi": 63.0,
       "station_count": 1,
-      "max_aqi": 64,
-      "min_aqi": 64
-    },
-    {
-      "county": "臺中市",
-      "average_aqi": 60.3,
-      "station_count": 6,
-      "max_aqi": 76,
-      "min_aqi": 0
+      "max_aqi": 63,
+      "min_aqi": 63
     },
     {
       "county": "基隆市",
@@ -67,39 +60,39 @@
       "min_aqi": 60
     },
     {
-      "county": "嘉義縣",
-      "average_aqi": 59.0,
-      "station_count": 2,
-      "max_aqi": 62,
-      "min_aqi": 56
+      "county": "臺中市",
+      "average_aqi": 58.2,
+      "station_count": 6,
+      "max_aqi": 76,
+      "min_aqi": 0
     },
     {
       "county": "新北市",
-      "average_aqi": 58.5,
+      "average_aqi": 58.1,
       "station_count": 12,
-      "max_aqi": 90,
+      "max_aqi": 89,
       "min_aqi": 43
     },
     {
-      "county": "高雄市",
-      "average_aqi": 55.6,
-      "station_count": 12,
-      "max_aqi": 67,
-      "min_aqi": 48
+      "county": "嘉義縣",
+      "average_aqi": 58.0,
+      "station_count": 2,
+      "max_aqi": 62,
+      "min_aqi": 54
     },
     {
-      "county": "臺北市",
-      "average_aqi": 54.9,
-      "station_count": 7,
-      "max_aqi": 64,
-      "min_aqi": 47
+      "county": "高雄市",
+      "average_aqi": 56.1,
+      "station_count": 12,
+      "max_aqi": 69,
+      "min_aqi": 45
     },
     {
       "county": "臺南市",
-      "average_aqi": 53.2,
+      "average_aqi": 53.8,
       "station_count": 5,
-      "max_aqi": 59,
-      "min_aqi": 42
+      "max_aqi": 60,
+      "min_aqi": 43
     },
     {
       "county": "嘉義市",
@@ -109,25 +102,32 @@
       "min_aqi": 53
     },
     {
+      "county": "臺北市",
+      "average_aqi": 52.9,
+      "station_count": 7,
+      "max_aqi": 59,
+      "min_aqi": 45
+    },
+    {
       "county": "屏東縣",
       "average_aqi": 50.0,
       "station_count": 5,
-      "max_aqi": 57,
+      "max_aqi": 62,
       "min_aqi": 43
     },
     {
       "county": "桃園市",
-      "average_aqi": 48.5,
+      "average_aqi": 48.2,
       "station_count": 6,
-      "max_aqi": 54,
+      "max_aqi": 56,
       "min_aqi": 43
     },
     {
       "county": "宜蘭縣",
-      "average_aqi": 45.5,
+      "average_aqi": 46.0,
       "station_count": 2,
-      "max_aqi": 53,
-      "min_aqi": 38
+      "max_aqi": 52,
+      "min_aqi": 40
     },
     {
       "county": "新竹市",
@@ -138,10 +138,10 @@
     },
     {
       "county": "新竹縣",
-      "average_aqi": 39.5,
+      "average_aqi": 39.0,
       "station_count": 2,
       "max_aqi": 43,
-      "min_aqi": 36
+      "min_aqi": 35
     },
     {
       "county": "花蓮縣",
@@ -152,17 +152,17 @@
     },
     {
       "county": "苗栗縣",
-      "average_aqi": 38.0,
+      "average_aqi": 38.3,
       "station_count": 3,
       "max_aqi": 58,
-      "min_aqi": 22
+      "min_aqi": 24
     },
     {
       "county": "臺東縣",
       "average_aqi": 35.0,
       "station_count": 2,
-      "max_aqi": 35,
-      "min_aqi": 35
+      "max_aqi": 36,
+      "min_aqi": 34
     }
   ]
 }
