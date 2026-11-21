@@ -1,6 +1,6 @@
 {
   "county": "嘉義市",
-  "updated_at": "2026-11-21 15:09:08",
+  "updated_at": "2026-11-21 16:09:09",
   "stations": [
     {
       "site_id": "42",
@@ -26,7 +26,7 @@
       "wind_direc": "",
       "longitude": "120.44125",
       "latitude": "23.464779",
-      "publish_time": "2026/11/21 15:00:00"
+      "publish_time": "2026/11/21 16:00:00"
     }
   ]
 }
